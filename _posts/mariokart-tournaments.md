@@ -1,6 +1,6 @@
 ---
 title: 'The Mathematics of Mariokart Tournaments'
-excerpt: 'Why designing a fair and fun tournament for one of Nintendo's most iconic franchises is harder than you think.'
+excerpt: "Why designing a fair and fun tournament for one of Nintendo's most iconic franchises is harder than you think."
 coverImage: '/assets/blog/mariokart-tournament/mk8-deluxe-cover-art.jpeg'
 date: '2023-01-23T05:35:07.322Z'
 author:
@@ -54,7 +54,7 @@ Because brackets are traditionally for **1v1** matchups. Mario Kart lends itself
 
 But how *do* you hold a tournament that doesn't have 1v1 matchups, anyways? I'm **so** glad you asked!
 
-Instead, we can split the tournament up into two stages: the **Seeding Stage** and the **Elimination Stage**.
+First, we split the tournament up into two stages: the **Seeding Stage** and the **Elimination Stage**.
 
 ## The Seeding Stage
 
@@ -68,20 +68,20 @@ This is just a trusty combination formula of `nCr = n! / r!(n - r)!` - so for a 
 
 So obviously, this is unreasonable to do in any fixed amount of time. So how do we seed participants in a reasonable amount of time? There's a couple approaches, and they each have their trade-offs, but I will be focusing on using what's called the **Swiss Pairing System**.
 
-### What is Swiss Pairing System?
+### What is the Swiss Pairing System?
 
-Woah. That's a fancy name, but what's it mean? The Accelerated Swiss Pairing System matchmaking system used primarily in [Swiss Tournament Systems](https://en.wikipedia.org/wiki/Swiss-system_tournament) to determine relative ranks of competitors quickly. It's most effective at determining the **extremes** of participants (the absolute best, and absolute worst of your participant pool).
+Woah. That's a fancy name, but what's it mean? The Swiss Pairing System matchmaking system used primarily in [Swiss Tournament Systems](https://en.wikipedia.org/wiki/Swiss-system_tournament) to determine relative ranks of competitors quickly. It's most effective at determining the **extremes** of participants (the absolute best, and absolute worst of your participant pool).
 
 It works like this. Let's say we have eight participants in our Mario Kart tournament, Mario, Luigi, Peach, Daisy, Wario, Waluigi, Toad, and Bowser. We can list them in no particular order like such:
 
-1. Mario
-2. Luigi
-3. Peach
-4. Daisy
-5. Wario
-6. Waluigi
-7. Toad
-8. Bowser
+1. 1 - Mario
+2. 2 - Luigi
+3. 3 - Peach
+4. 4 - Daisy
+5. 5 - Wario
+6. 6 - Waluigi
+7. 7 - Toad
+8. 8 - Bowser
 
 To illustrate how this system can work with any kind of matchup, we'll start with just a traditional 1v1 matchup. Our first set of matches can be anything really, but we'll use circle seeding to determine them like so:
 
@@ -94,14 +94,14 @@ To illustrate how this system can work with any kind of matchup, we'll start wit
 
 So our standings look like such after the first round of matches:
 
-1. Mario (1-0)
-2. Luigi (1-0)
-3. Peach (1-0)
-4. Daisy (1-0)
-5. Wario (0-1)
-6. Waluigi (0-1)
-7. Toad (0-1)
-8. Bowser (0-1)
+1. 1 - Mario (1-0)
+2. 2 - Luigi (1-0)
+3. 3 - Peach (1-0)
+4. 4 - Daisy (1-0)
+5. 5 - Wario (0-1)
+6. 6 - Waluigi (0-1)
+7. 7 - Toad (0-1)
+8. 8 - Bowser (0-1)
 
 For round two, we then sort the participants based on their standing, and then create matchups across participants with similar ranks, like so:
 
@@ -112,14 +112,14 @@ For round two, we then sort the participants based on their standing, and then c
 
 So our standings look like such after the second round of matches:
 
-1. Mario (2-0)
-2. Luigi (2-0)
-3. Peach (1-1)
-4. Daisy (1-1)
-5. Wario (1-1)
-6. Waluigi (1-1)
-7. Toad (0-2)
-8. Bowser (0-2)
+1. 1 - Mario (2-0)
+2. 2 - Luigi (2-0)
+3. 3 - Peach (1-1)
+4. 4 - Daisy (1-1)
+5. 5 - Wario (1-1)
+6. 6 - Waluigi (1-1)
+7. 7 - Toad (0-2)
+8. 8 - Bowser (0-2)
 
 We can then continue on to the third round, where the matchups are like so:
 
@@ -130,14 +130,14 @@ We can then continue on to the third round, where the matchups are like so:
 
 So our standings after only three rounds of seeding are:
 
-1. Mario (3-0)
-2. Luigi (2-1)
-3. Peach (2-1)
-4. Daisy (2-1)
-5. Wario (1-2)
-6. Waluigi (1-2)
-7. Toad (1-2)
-8. Bowser (0-3)
+1. 1 - Mario (3-0)
+2. 2 - Luigi (2-1)
+3. 3 - Peach (2-1)
+4. 4 - Daisy (2-1)
+5. 5 - Wario (1-2)
+6. 6 - Waluigi (1-2)
+7. 7 - Toad (1-2)
+8. 8 - Bowser (0-3)
 
 As you can see, this system is great at quickly determining the absolute best, and absolute worst participants - after only three rounds, we can pretty definitively say that Mario is the best contestant, and Bowser is the worst contestant, and we did this in only three rounds of competition.
 
@@ -156,28 +156,28 @@ So, let's repeat our tournament but with the following first round:
 
 Race 1: (Mario, Peach, Wario, Toad)
 
-1. Mario
-2. Peach
-3. Wario
-4. Toad
+1. 1 - Mario
+2. 2 - Peach
+3. 3 - Wario
+4. 4 - Toad
 
 Race 2: (Luigi, Daisy, Waluigi, Bowser)
 
-1. Luigi
-2. Daisy
-3. Waluigi
-4. Bowser
+1. 1 - Luigi
+2. 2 - Daisy
+3. 3 - Waluigi
+4. 4 - Bowser
 
 So our standings after the first round are:
 
-1. Mario (3)
-2. Luigi (3)
-3. Peach (2)
-4. Daisy (2)
-5. Wario (1)
-6. Waluigi (1)
-7. Toad (0)
-8. Bowser (0)
+1. 1 - Mario (3)
+2. 2 - Luigi (3)
+3. 3 - Peach (2)
+4. 4 - Daisy (2)
+5. 5 - Wario (1)
+6. 6 - Waluigi (1)
+7. 7 - Toad (0)
+8. 8 - Bowser (0)
 
 Then Round 2 would be:
 
@@ -185,28 +185,28 @@ Then Round 2 would be:
 
 Race 1: (Mario, Luigi, Peach, Daisy)
 
-1. Mario
-2. Luigi
-3. Peach
-4. Daisy
+1. 1 - Mario
+2. 2 - Luigi
+3. 3 - Peach
+4. 4 - Daisy
 
 Race 2: (Wario, Waluigi, Toad, Bowser)
 
-1. Wario
-2. Waluigi
-3. Toad
-4. Bowser
+1. 1 - Wario
+2. 2 - Waluigi
+3. 3 - Toad
+4. 4 - Bowser
 
 Yielding standings of:
 
-1. Mario (6)
-2. Luigi (5)
-3. Wario (4)
-4. Peach (3)
-5. Waluigi (3)
-6. Daisy (2)
-7. Toad (1)
-8. Bowser (0)
+1. 1 - Mario (6)
+2. 2 - Luigi (5)
+3. 3 - Wario (4)
+4. 4 - Peach (3)
+5. 5 - Waluigi (3)
+6. 6 - Daisy (2)
+7. 7 - Toad (1)
+8. 8 - Bowser (0)
 
 Wow! With just two rounds, we've almost got a completely unique stratification of contestants! Granted Waluigi and Peach are still tied score-wise, but with only four total races, we've already determined a pretty decent seeding of contestants - and I think we can agree that 4 is much less than `8!/(4!(4!)) = 70`
 
@@ -214,7 +214,7 @@ Great! We now have a quick system to rank competitors so that we can seed them a
 
 - **You need a power of 2 to have a perfectly fair tournament**
 
-This is where a lesser used elimination style bracket comes into play - [Ladder Elimination](https://en.wikipedia.org/wiki/Ladder_tournament). The philosophy is simple: Rank the contestants from best to worst, then have the worst contestants play each other. The winner moves on to play the next lowest ranked player in the ladder, and so on until the number one ranked player plays whomever is left standing in the championship match.
+This is where a lesser used elimination style bracket comes into play - [**Ladder Elimination**](https://en.wikipedia.org/wiki/Ladder_tournament). The philosophy is simple: Rank the contestants from best to worst, then have the worst contestants play each other. The winner moves on to play the next lowest ranked player in the ladder, and so on until the number one ranked player plays whomever is left standing in the championship match.
 
 This shines exceedingly well with a 4v4 matchup style. Given our example Swiss seeding round we did above, we can show what the elimination stage would be like using Ladder Elimination:
 
@@ -224,10 +224,10 @@ Waluigi vs. Daisy vs. Toad vs. Bowser
 
 Results:
 
-1. Waluigi
-2. Daisy
-3. Toad
-4. Bowser
+1. 1 - Waluigi
+2. 2 - Daisy
+3. 3 - Toad
+4. 4 - Bowser
 
 Waluigi and Daisy move on, Toad and Bowser are eliminated.
 
@@ -235,10 +235,10 @@ Waluigi and Daisy move on, Toad and Bowser are eliminated.
 
 Wario vs. Peach vs. Waluigi vs. Daisy
 
-1. Wario
-2. Peach
-3. Waluigi
-4. Daisy
+1. 1 - Wario
+2. 2 - Peach
+3. 3 - Waluigi
+4. 4 - Daisy
 
 Wario and Peach move on, Waluigi and Daisy are eliminated.
 
@@ -246,10 +246,10 @@ Wario and Peach move on, Waluigi and Daisy are eliminated.
 
 Mario vs. Luigi vs. Wario vs. Peach
 
-1. Mario
-2. Luigi
-3. Wario
-4. Peach
+1. 1 - Mario
+2. 2 - Luigi
+3. 3 - Wario
+4. 4 - Peach
 
 Mario is the champion!
 
@@ -295,6 +295,6 @@ You can see how this amount of flexibility is nice when you're a tournament orga
 
 - **Alright, you've convinced me. But actually running a tournament like this seems harder than just filling out a simple elimination bracket. How am I supposed to keep track of all of this?**
 
-Oh I am *so* glad you asked. Allow me to present a website that will keep track of all of all of this for you - **[Slipstream, the Mariokart tournament management you didn't need, but I made for you anyway](https://www.slipstreamapp.net/)**. It's also completely serverless and saves data to your machine using localStorage, which I think is pretty neat.
+Oh I am *so* glad you asked. Allow me to present a website that will keep track of all of all of this for you - [**Slipstream**, the Mariokart tournament management you didn't need, but I made for you anyway](https://www.slipstreamapp.net/). It's also completely serverless and saves data to your machine using localStorage, which I think is pretty neat.
 
 Thanks for reading, and happy racing! 🏁
